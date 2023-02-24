@@ -4,7 +4,7 @@ pipeline {
         stage('change directory and present working directory') {
             steps {
                 sh 'cd /var/lib/jenkins/workspace'
-                sh 'git clone https://github.com/Laxman-gaur/magic-cursor.git'
+                sh 'git clone https://github.com/agarwalraghav1212/magic-cursor.git'
                 sh 'cd ./magic-cursor'
                 sh 'pwd'
             }
