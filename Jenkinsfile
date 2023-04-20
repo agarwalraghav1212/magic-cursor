@@ -12,7 +12,7 @@ pipeline {
         stage('install required dependencies') {
             steps {
                 sh 'npm audit fix --force'
-                sh 'npm i'
+                sh 'npm install'
             }
         }
         stage('deploy') {
