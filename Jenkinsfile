@@ -17,12 +17,12 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'pm2 start server.js'
+                sh 'npm start server.js'
             }
         }
         stage('show'){
             steps{
-                sh 'pm2 list'
+                sh 'npm list'
             }
         }    
     }
